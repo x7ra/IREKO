@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ireko — AIOps & ITSM Platform</title>
+  <title>Ireko Platform</title>
   <meta name="description" content="Surveillez vos machines, sécurisez votre AD, traitez vos tickets — tout en un. L'IA connaît l'état de votre infrastructure en temps réel." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -504,15 +504,16 @@
 
       <div class="badge">
         <span class="badge-dot"></span>
-        L'IA connaît l'état de vos machines en temps réel
+        Monitoring · Active Directory · Helpdesk — une seule IA, tout le contexte
         <i data-lucide="chevron-right" style="width:12px;height:12px"></i>
       </div>
 
       <h1>Gérez votre IT<br><em>sans perdre de temps</em></h1>
 
       <p class="hero-sub">
-        Ireko surveille vos machines, audite votre Active Directory et aide vos techniciens
-        à résoudre les tickets plus vite — grâce à une IA qui connaît l'état réel de votre infrastructure.
+        Monitoring, Active Directory et Helpdesk réunis dans un seul outil.
+        L'IA accède à tout votre contexte machines, AD, tickets et vous donne
+        un diagnostic précis en quelques secondes, pas une réponse générique.
       </p>
 
       <div class="hero-ctas">
@@ -653,8 +654,8 @@
       </div>
       <div class="step reveal" style="transition-delay:240ms">
         <div class="step-num">3</div>
-        <h3>L'IA prend le relais</h3>
-        <p>À chaque ticket ouvert, l'IA consulte l'état réel de la machine concernée, détecte les CVE présentes et propose un diagnostic actionnable.</p>
+        <h3>L'IA répond avec votre contexte</h3>
+        <p>Un ticket arrive l'IA consulte simultanément l'état de la machine (CPU, RAM, logs), l'AD (droits, comptes suspects) et les CVE connues sur les logiciels installés. Elle ne devine pas : elle répond avec vos données réelles.</p>
       </div>
     </div>
   </div>
@@ -665,8 +666,8 @@
   <div class="container">
     <div class="stats-grid">
       <div class="stat reveal" style="transition-delay:0ms">
-        <div class="stat-value">< 5 Mo</div>
-        <div class="stat-label">Empreinte mémoire de l'agent</div>
+        <div class="stat-value">~7 Mo</div>
+        <div class="stat-label">Taille du binaire agent</div>
       </div>
       <div class="stat reveal" style="transition-delay:80ms">
         <div class="stat-value">30 sec</div>
@@ -688,8 +689,8 @@
 <section class="features-section" id="features">
   <div class="container">
     <div class="section-header reveal">
-      <h2>Tout dans un seul outil,<br><em>simple à prendre en main</em></h2>
-      <p>Machines, utilisateurs AD, tickets IT — Ireko centralise tout ce que gère votre équipe au quotidien, sans multiplier les outils.</p>
+      <h2>Trois modules,<br><em>une seule source de vérité</em></h2>
+      <p>Monitoring, AD et Helpdesk sont connectés entre eux. L'IA peut croiser ces trois sources à tout moment — c'est impossible avec des outils séparés.</p>
     </div>
     <div class="features-grid">
 
@@ -739,48 +740,52 @@
     <div class="ai-grid">
 
       <div class="ai-text reveal">
-        <div class="ai-tag"><i data-lucide="brain"></i> Assistant IA</div>
-        <h2>L'IA qui répond<br><em>avec le contexte de votre infra</em></h2>
+        <div class="ai-tag"><i data-lucide="brain"></i> Pourquoi l'IA d'Ireko est différente</div>
+        <h2>Pas une IA généraliste —<br><em>une IA qui connaît vos machines.</em></h2>
         <p>
-          Quand un ticket arrive, l'IA ne devine pas — elle consulte l'état réel de la machine :
-          CPU, RAM, alertes récentes, logiciels installés et CVE associées. Elle donne un diagnostic
-          précis en quelques secondes, pas une réponse générique.
+          ChatGPT vous donne des réponses génériques. L'IA d'Ireko vous donne
+          <strong style="color:var(--fg)">la réponse pour votre machine, maintenant</strong>.
+          Elle accède en temps réel aux métriques de l'asset concerné, aux utilisateurs AD qui
+          y ont accès, aux logiciels installés et aux CVE associées. Résultat : un diagnostic
+          en quelques secondes là où vous passiez 20 minutes à corréler manuellement.
         </p>
         <ul class="ai-checklist">
           <li class="ai-check-item">
             <div class="check-circle"><i data-lucide="check"></i></div>
-            Diagnostic basé sur les données live de la machine
+            Accès live aux métriques de la machine : CPU, RAM, disque, processus
           </li>
           <li class="ai-check-item">
             <div class="check-circle"><i data-lucide="check"></i></div>
-            Détecte les CVE et logiciels non à jour sur l'asset concerné
+            Croise avec l'AD : qui a accès, comptes suspects, droits excessifs
           </li>
           <li class="ai-check-item">
             <div class="check-circle"><i data-lucide="check"></i></div>
-            Corrèle le ticket avec les événements récents
+            Détecte les CVE sur les logiciels installés de cette machine précise
           </li>
           <li class="ai-check-item">
             <div class="check-circle"><i data-lucide="check"></i></div>
-            Propose les actions concrètes à effectuer
+            Propose des actions concrètes — pas des suggestions génériques
           </li>
         </ul>
       </div>
 
       <div class="chat-mockup reveal" style="transition-delay:150ms">
-        <div class="chat-user">Le serveur SRV-SQL-PROD ne répond plus depuis 10 minutes</div>
+        <div class="chat-user">Je n'arrive pas à ouvrir le dossier \\SRV-FICHIERS\Projets depuis ce matin</div>
         <div class="chat-ai">
-          <p>J'ai analysé SRV-SQL-PROD. Dernier heartbeat il y a 12 min, CPU à 99% sur les 5 dernières mesures.</p>
+          <p>J'ai analysé le compte AD de <strong>m.dupont</strong> et les permissions du partage. Cause identifiée :</p>
           <div class="chat-code">
-            <span style="color:var(--crit)">● CPU 99% — 3 processus suspects</span>
-            <span style="color:var(--warn)">● RAM 94% — swap actif</span>
-            <span style="color:var(--warn)">● OpenSSL 1.1.0 — CVE-2023-0286 détectée</span>
-            <span style="color:var(--muted-fg)">Dernier snapshot : 14 min</span>
+            <span style="color:var(--crit)">● Groupe requis : GRP-PROJETS-RW</span>
+            <span style="color:var(--crit)">● Groupes actuels : GRP-STANDARD, GRP-RH</span>
+            <span style="color:var(--warn)">● Accès retiré le 18/03 — réorg. départements</span>
           </div>
-          <p>Actions suggérées :</p>
+          <p><strong style="color:var(--ok)">✓ Solution :</strong> ajouter <strong>m.dupont</strong> au groupe <strong>GRP-PROJETS-RW</strong>. L'accès sera restauré immédiatement.</p>
+          <div class="chat-code">
+            <span style="color:var(--muted-fg)"># PowerShell — Active Directory</span>
+            <span style="color:var(--ai)">Add-ADGroupMember <span style="color:var(--fg)">-Identity</span> <span style="color:var(--ok)">"GRP-PROJETS-RW"</span> <span style="color:var(--fg)">-Members</span> <span style="color:var(--ok)">"m.dupont"</span></span>
+          </div>
           <div class="chat-actions">
-            <button class="chat-btn cb-warn">Voir les processus</button>
-            <button class="chat-btn cb-ai">Créer un incident</button>
-            <button class="chat-btn cb-muted">Historique asset</button>
+            <button class="chat-btn" style="background:var(--ok);color:#fff;font-weight:600;padding:.3rem .8rem">▶ Exécuter</button>
+            <button class="chat-btn cb-muted">Voir le compte AD</button>
           </div>
         </div>
       </div>
@@ -793,8 +798,8 @@
 <section class="cta-section">
   <div class="container">
     <div class="cta-inner reveal">
-      <h2>Prêt en 5 minutes,<br><em>utile dès le premier jour</em></h2>
-      <p>Créez un compte, installez l'agent sur une machine et voyez vos premières données remonter en temps réel.</p>
+      <h2>Arrêtez de corréler<br><em>à la main entre 3 outils.</em></h2>
+      <p>Ireko regroupe monitoring, AD et helpdesk dans une seule plateforme. L'IA fait la corrélation à votre place — vous intervenez quand c'est nécessaire, avec le bon diagnostic dès le départ.</p>
       <div class="cta-checklist">
         <div class="cta-check"><i data-lucide="check"></i> Agent installé et machine visible en temps réel</div>
         <div class="cta-check"><i data-lucide="check"></i> Inventaire complet généré automatiquement</div>
